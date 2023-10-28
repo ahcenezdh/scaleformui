@@ -22,7 +22,7 @@ const config = {
   projectName: 'scaleformui-docs', // Usually your repo name.
   deploymentBranch: 'deployment',
   trailingSlash: false,
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful

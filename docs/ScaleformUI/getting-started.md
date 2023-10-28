@@ -5,7 +5,7 @@ sidebar_position: 2
 # Getting Started
 
 ## Requirements  
-* [Grand Theft Auto V]([https](https://store.rockstargames.com/fr/game/buy-gta-v))  
+* [Grand Theft Auto V](https://store.rockstargames.com/fr/game/buy-gta-v)
 * [FiveM](https://fivem.net/) 
 * [Visual Studio or FxDK for C#](https://visualstudio.microsoft.com/fr/vs/community/)   
 * [ScaleformUI](https://github.com/manups4e/ScaleformUI/releases)
