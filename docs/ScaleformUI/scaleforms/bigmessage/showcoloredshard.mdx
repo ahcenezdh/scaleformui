@@ -16,8 +16,8 @@ ScaleformUI.Scaleforms.BigMessageInstance:ShowColoredShard("Hey this is a exampl
 ```
 - **Description**: Displays a colored shard message on the screen with the specified text, colors, and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called. By default, manualDispose is set to `false`.
 - **Parameters**:
-  - `message`: The main message to be displayed.
-  - `description`: The subtitle or description to accompany the main message.
+  - `msg`: The main message to be displayed.
+  - `desc`: The subtitle or description to accompany the main message.
   - `textColor`: The color index for the text.
   - `bgColor`: The color index for the background.
   - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
@@ -32,8 +32,8 @@ ScaleformUI.Main.BigMessageInstance.ShowColoredShard(string msg, string desc, Hu
 ```
 - **Description**: Displays a mission-passed message on the screen with the specified text and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called. By default, manualDispose is set to `false`.
 - **Parameters**:
-  - `message`: The main message to be displayed.
-  - `description`: The subtitle or description to accompany the main message.
+  - `msg`: The main message to be displayed.
+  - `desc`: The subtitle or description to accompany the main message.
   - `textColor`: The color index for the text.
   - `bgColor`: The color index for the background.
   - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.

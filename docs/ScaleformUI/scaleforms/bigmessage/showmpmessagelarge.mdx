@@ -1,0 +1,40 @@
+---
+sidebar_position: 6
+---
+
+# ShowMpMessageLarge
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:ShowMpMessageLarge("Hey this is a example", 5000, false)
+```
+- **Description**: Displays a message in large format on the screen with the specified text and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+ScaleformUI.Main.BigMessageInstance.ShowMpMessageLarge(string msg, int time = 5000, bool manualDispose = false);
+```
+- **Description**: Displays a message in large format on the screen with the specified text and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+</Tabs>
+
+![ShowMpMessageLarge](https://i.imgur.com/Ffa0yPd.png)

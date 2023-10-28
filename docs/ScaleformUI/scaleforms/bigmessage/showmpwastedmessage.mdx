@@ -1,0 +1,42 @@
+---
+sidebar_position: 7
+---
+
+# ShowMpWastedMessage
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:ShowMpWastedMessage("Hey this is a example", "This is a subtitle", 5000)
+```
+- **Description**: Displays a multiplayer message on the screen with the specified text and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `sub`: The subtitle or description to accompany the main message.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+ScaleformUI.Main.BigMessageInstance.ShowMpWastedMessage(string msg, string sub, int time = 5000, bool manualDispose = false);
+```
+- **Description**: Displays a multiplayer message on the screen with the specified text and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `sub`: The subtitle or description to accompany the main message.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+</Tabs>
+
+![ShowMpWastedMessage](https://i.imgur.com/Z3hcOxm.png)
