@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ahcenezdh', // Usually your GitHub org/user name.
-  projectName: 'scaleformui-docs', // Usually your repo name.
+  projectName: 'scaleformui', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   onBrokenLinks: 'throw',
