@@ -1,0 +1,109 @@
+---
+sidebar_position: 3
+---
+
+# Menu Handler
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+With The Gary update, MenuPool no longer exists and in its ashes, MenuHandler was born. 
+
+MenuHandler handles the currently visible menu, and draws it for you, it also handle the switching between menus.
+It doesn't need to be instantiated as it's ready to work as soon as you start ScaleformUI!
+
+MenuHandler gives you informations about the currently visible menu or pause menu.
+
+Here's what you can find inside it:
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+MenuHandler._currentMenu
+```
+- **Description**: Holds the active `UIMenu` object. (Internal function, not for external use.)
+- **Return**: The currently open menu or `nil` if no menu is open.
+
+```lua
+MenuHandler._currentPauseMenu
+```
+- **Description**: Holds the currently active pause menu. (Internal function, not for external use.)
+- **Return**: The currently open pause menu or `nil` if no menu is open.
+
+
+```lua
+MenuHandler:IsAnyMenuOpen()
+```
+- **Description**: Checks if any `MenuBase` menu is currently displayed.
+- **Return**: `true` if a `MenuBase` menu is visible, otherwise `false`.
+
+```lua
+MenuHandler:IsAnyPauseMenuOpen()
+```
+- **Description**: Checks if any `PauseMenuBase` menu is currently displayed.
+- **Return**: `true` if a `PauseMenuBase` menu is visible, otherwise `false`.
+
+```lua
+MenuHandler:SwitchTo(currentMenu, newMenu, newMenuCurrentSelection, inheritOldMenuParams, data)
+```
+- **Description**: Transitions from the current menu to a new specified menu, with options to inherit parameters from the old menu and additional parameters.
+- **Parameters**:
+  - `currentMenu`: The active menu.
+  - `newMenu`: The menu to transition to.
+  - `newMenuCurrentSelection`: The selected item in the new menu. Defaults to 1 if not provided.
+  - `inheritOldMenuParams`: Determines if parameters from the old menu should be inherited. 
+  - `data`: Additional data or parameters.
+- **Note**: Contains several validations to ensure smooth transition and throws errors if criteria aren't met.
+
+```lua
+MenuHandler:CloseAndClearHistory()
+```
+- **Description**: Closes any active menus, clears breadcrumb history, and resets instructional buttons.
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+MenuBase CurrentMenu
+```
+- **Type**: `MenuBase`
+- **Description**: Returns the currently open menu; `null` if no menu is open.
+
+```csharp
+PauseMenuBase CurrentPauseMenu
+```
+- **Type**: `PauseMenuBase`
+- **Description**: Returns the currently open pause menu; `null` if no pause menu is open.
+
+```csharp
+bool IsAnyMenuOpen
+```
+- **Type**: `bool`
+- **Description**: Returns `true` if any `MenuBase` menu is currently visible.
+
+```csharp
+bool IsAnyPauseMenuOpen
+```
+- **Type**: `bool`
+- **Description**: Returns `true` if any `PauseMenuBase` menu is currently visible.
+
+```csharp
+Task SwitchTo(this MenuBase currentMenu, MenuBase newMenu, int newMenuCurrentSelection = 0, bool inheritOldMenuParams = false, dynamic data = null)
+```
+- **Description**: The unique method to switch from one menu to another.
+- **Parameters**:
+  - `currentMenu`: The active menu.
+  - `newMenu`: The menu to transition to.
+  - `newMenuCurrentSelection`: The selected item in the new menu. Defaults to 0 if not provided.
+  - `inheritOldMenuParams`: Determines if parameters from the old menu should be inherited. 
+  - `data`: Additional data or parameters.
+
+```csharp
+Void CloseAndClearHistory()
+```
+- **Description**: Closes whatever menu is visible and clears the BreadcrumbHandler.
+
+</TabItem>
+</Tabs>

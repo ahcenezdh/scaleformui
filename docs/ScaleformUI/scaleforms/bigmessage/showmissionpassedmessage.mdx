@@ -1,0 +1,40 @@
+---
+sidebar_position: 0
+---
+
+# ShowMissionPassedMessage
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:ShowMissionPassedMessage("Hey this is a example", 5000, false)
+```
+- **Description**: Displays a mission-passed message on the screen with the specified text and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](../dispose) is called.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `duration`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: If set to `true`, the scaleform message remains on the screen until manually disposed.
+- **Return**: None
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+ScaleformUI.BigMessageInstance.ShowMissionPassedMessage(string msg, int time = 5000, bool manualDispose = false);
+```
+- **Description**: Displays a mission-passed message on the screen with the specified text and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](../dispose) is called.
+- **Parameters**:
+  - `msg`: The message to be displayed.
+  - `duration`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: If set to `true`, the scaleform message remains on the screen until manually disposed.
+- **Return**: None
+
+</TabItem>
+</Tabs>
+
+![ShowMissionPassedMessage](https://i.imgur.com/ar94OHC.png)

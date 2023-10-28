@@ -1,0 +1,43 @@
+---
+sidebar_position: 0
+---
+
+# Dispose
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Description
+
+Disposes the active instance of a given scaleform, ensuring it is removed from the screen.
+
+<Tabs>
+<TabItem value="lua" label="Lua">
+
+### Method Available On Scaleforms
+
+- `ScaleformUI.Scaleforms.BigMessageInstance`
+- `ScaleformUI.Scaleforms.MidMessageInstance`
+- `ScaleformUI.Scaleforms.Warning`
+- `ScaleformUI.Scaleforms.Countdown`
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:Dispose()
+```
+</TabItem>
+
+<TabItem value="csharp" label="C#">
+
+### Method Available On Scaleforms
+
+- `ScaleformUI.BigMessageInstance`
+- `ScaleformUI.MedMessageInstance`
+- `ScaleformUI.Warning`
+- `ScaleformUI.Countdown`
+
+```csharp
+ScaleformUI.Scaleforms.BigMessageInstance:Dispose();
+```
+</TabItem>
+</Tabs>

@@ -1,0 +1,68 @@
+---
+sidebar_position: 1
+---
+
+# Introduction
+
+export const Img = ({src, width, height, alt, style}) => (
+  <img 
+    src={src} 
+    width={width || "auto"} 
+    height={height || "auto"} 
+    alt={alt || ""}
+    style={{ cursor: 'pointer', ...style }}
+  />
+);
+
+## What is ScaleformUI?
+ScaleformUI is a scaleform based library that helps you quickly and easily build Rockstar-like menus and pausemenus, handle notifications, markers, and use some of the most used in-game scaleforms as well.
+
+<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+  <div style={{ flex: '0 0 50%', paddingRight: '10px' }}>
+    <Img 
+      src="https://forum.cfx.re/uploads/default/original/4X/d/8/9/d895400592415d29ae545e8e507f69b8c4fb42f6.jpeg"
+      width="100%"
+      alt="ScaleformUI Menus"
+    />
+  </div>
+  <div style={{ flex: '0 0 50%', paddingLeft: '10px' }}>
+    <Img 
+      src="https://forum.cfx.re/uploads/default/original/4X/4/7/7/477dca892bd9e5f656950fb4642a9ed6efc8f4f3.jpeg"
+      width="100%"
+      alt="ScaleformUI Pause Menu"
+    />
+  </div>
+</div>
+
+<div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
+  <div style={{ flex: '0 0 50%', paddingRight: '10px' }}>
+    <Img 
+      src="https://forum.cfx.re/uploads/default/original/4X/e/b/4/eb4c3fc287b62eafe0fe14702e7b4487f2c1ee22.jpeg"
+      width="100%"
+      alt="ScaleformUI Lobby Menu"
+    />
+  </div>
+</div>
+
+## Where do I begin?
+Take a look at our [Getting Started](getting-started) page.
+
+## Features
+* Support for simple buttons, checkboxes and lists.
+* Support for custom banners from game sprites and your own textures.
+* Easy nested menus for fast and painless nested menu system.
+* Controller support.
+* Mouse controls.
+* Support for all screen resolutions.
+* Item descriptions.
+* Rebindable keys and controls.
+* Badges to decorate your items.
+* Event-based callbacks for C#.
+* Easy and painless PauseMenu creation.
+* Custom instructional buttons.
+* Custom warning screen.
+* Custom big message and midsize message.
+* Timer bars easy and for everyone!
+
+## Special Thanks ❤️
+Thanks to PhilippRendel for helping out on Lua and making it look a lot more easy to use, thanks man.
