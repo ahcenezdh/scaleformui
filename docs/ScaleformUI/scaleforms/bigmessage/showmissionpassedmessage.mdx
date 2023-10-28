@@ -14,11 +14,11 @@ import TabItem from '@theme/TabItem';
 ```lua
 ScaleformUI.Scaleforms.BigMessageInstance:ShowMissionPassedMessage("Hey this is a example", 5000, false)
 ```
-- **Description**: Displays a mission-passed message on the screen with the specified text and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
+- **Description**: Displays a mission-passed message on the screen with the specified text and time. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
 - **Parameters**:
   - `message`: The message to be displayed.
-  - `duration`: The time duration for which the message is displayed, in milliseconds.
-  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and duration is ignored.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
 - **Return**: None
 
 </TabItem>
@@ -27,11 +27,11 @@ ScaleformUI.Scaleforms.BigMessageInstance:ShowMissionPassedMessage("Hey this is 
 ```csharp
 ScaleformUI.BigMessageInstance.ShowMissionPassedMessage(string msg, int time = 5000, bool manualDispose = false);
 ```
-- **Description**: Displays a mission-passed message on the screen with the specified text and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
+- **Description**: Displays a mission-passed message on the screen with the specified text and time. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
 - **Parameters**:
   - `message`: The message to be displayed.
-  - `duration`: The time duration for which the message is displayed, in milliseconds.
-  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and duration is ignored.
+  - `time`: The time duration for which the message is displayed, in milliseconds.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
 - **Return**: None
 
 </TabItem>

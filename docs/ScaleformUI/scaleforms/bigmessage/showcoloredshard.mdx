@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # ShowColoredShard
@@ -14,14 +14,14 @@ import TabItem from '@theme/TabItem';
 ```lua
 ScaleformUI.Scaleforms.BigMessageInstance:ShowColoredShard("Hey this is a example", "This is a subtitle", 1, 0, 5000, false)
 ```
-- **Description**: Displays a colored shard message on the screen with the specified text, colors, and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
+- **Description**: Displays a colored shard message on the screen with the specified text, colors, and time. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
 - **Parameters**:
   - `message`: The main message to be displayed.
   - `description`: The subtitle or description to accompany the main message.
   - `textColor`: The color index for the text.
   - `bgColor`: The color index for the background.
-  - `duration`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
-  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and duration is ignored.
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
 - **Return**: None
 
 </TabItem>
@@ -30,14 +30,14 @@ ScaleformUI.Scaleforms.BigMessageInstance:ShowColoredShard("Hey this is a exampl
 ```csharp
 ScaleformUI.BigMessageInstance.ShowColoredShard(string msg, string desc, HudColor textColor, HudColor bgColor, int time = 5000, bool manualDispose = false);
 ```
-- **Description**: Displays a mission-passed message on the screen with the specified text and duration. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
+- **Description**: Displays a mission-passed message on the screen with the specified text and time. If manualDispose is set to `true`, the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called.
 - **Parameters**:
   - `message`: The main message to be displayed.
   - `description`: The subtitle or description to accompany the main message.
   - `textColor`: The color index for the text.
   - `bgColor`: The color index for the background.
-  - `duration`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
-  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and duration is ignored.
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
 - **Return**: None
 
 </TabItem>

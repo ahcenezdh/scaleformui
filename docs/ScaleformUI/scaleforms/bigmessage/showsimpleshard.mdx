@@ -1,0 +1,42 @@
+---
+sidebar_position: 3
+---
+
+# ShowSimpleShard
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:ShowSimpleShard("Hey this is a example", "This is a subtitle", 5000, false)
+```
+- **Description**: Displays a simple shard message on the screen with the specified title, subtitle, and time. If manualDispose is set to `true`, the duration specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `message`: The main message to be displayed.
+  - `description`: The subtitle or description to accompany the main message.
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+ScaleformUI.BigMessageInstance.ShowSimpleShard(string title, string subtitle, int time = 5000, bool manualDispose = false);
+```
+- **Description**: Displays a simple shard message on the screen with the specified title, subtitle, and time. If manualDispose is set to `true`, the duration specified will be ignored, and the displayed message will persist on the screen until Dispose is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `message`: The main message to be displayed.
+  - `description`: The subtitle or description to accompany the main message.
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+</Tabs>
+
+![ShowMissionPassedMessage](https://i.imgur.com/cECD3vO.png)
