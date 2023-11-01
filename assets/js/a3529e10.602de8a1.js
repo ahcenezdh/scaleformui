@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[914],{154:e=>{e.exports=JSON.parse('{"title":"ScaleformUI","description":"ScaleformUI Documentation","slug":"/category/scaleformui","permalink":"/scaleformui/docs/category/scaleformui","navigation":{"next":{"title":"Introduction","permalink":"/scaleformui/docs/ScaleformUI/intro"}}}')}}]);
