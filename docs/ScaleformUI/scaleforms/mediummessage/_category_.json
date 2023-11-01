@@ -1,6 +1,6 @@
 {
-    "label": "Scaleforms",
-    "position": 4,
+    "label": "Medium Message",
+    "position": 2,
     "link": {
       "type": "generated-index",
       "description": "These are all the Scaleforms that ScaleformUI handles for you, providing a user friendly API for you to implement in your scritps!"

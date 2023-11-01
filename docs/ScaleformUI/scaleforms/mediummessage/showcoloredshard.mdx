@@ -1,0 +1,51 @@
+---
+sidebar_position: 0
+---
+
+# ShowColoredShard
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="lua" label="Lua">
+
+```lua
+ScaleformUI.Scaleforms.BigMessageInstance:ShowColoredShard("Hey this is a example", "This is a subtitle", 21, 5, false, false, 5000, 850, false)
+```
+- **Description**: Displays a colored shard message on the screen with the specified text, colors, and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The main message to be displayed.
+  - `desc`: The subtitle or description to accompany the main message.
+  - `bgColor`: The color index for the background.
+  - `outColor`: The color index for the exit animation.
+  - `useDarkerShard`: If set to `true`, the shard will be darker.
+  - `useCondensedShard`: If set to `true`, the shard will be condensed.
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `animTime`: The time duration to exit the animation (Default: 750).
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+<TabItem value="csharp" label="C#">
+
+```csharp
+ScaleformUI.MedMessageInstance.ShowColoredShard(string msg, string desc, HudColor bgColor, HudColor outColor, bool useDarkerShard = false, bool useCondensedShard = false, int time = 5000, int animTime = 0.33f, bool manualDispose = false);
+```
+- **Description**: Displays a colored shard message on the screen with the specified text, colors, and time. If manualDispose is set to `true`, the time specified will be ignored, and the displayed message will persist on the screen until [Dispose](/scaleformui/docs/ScaleformUI/scaleforms/Dispose) is called. By default, manualDispose is set to `false`.
+- **Parameters**:
+  - `msg`: The main message to be displayed.
+  - `desc`: The subtitle or description to accompany the main message.
+  - `textColor`: The color index for the text.
+  - `bgColor`: The color index for the background.
+  - `outColor`: The color index for the exit animation
+  - `time`: The time duration for which the message is displayed, in milliseconds. Ignored if manualDispose is true.
+  - `animTime`: The time duration to exit the animation.
+  - `manualDispose`: (Optional) If set to `true`, the scaleform message remains on the screen until manually disposed and time is ignored.
+- **Return**: None
+
+</TabItem>
+</Tabs>
+
+![ShowColoredShard](https://i.imgur.com/SjJgTLU.png)
